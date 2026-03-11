@@ -1,0 +1,72 @@
+# ============================================================
+# OS & Editor
+# ============================================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
+
+# ============================================================
+# Environment variables
+# ============================================================
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# ============================================================
+# Backend (Go)
+# ============================================================
+# Compiled binaries
+backend/bin/
+*.exe
+*.out
+
+# Test output
+*.test
+*.prof
+
+# ============================================================
+# Frontend (Next.js / Node)
+# ============================================================
+frontend/node_modules/
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel/
+frontend/tsconfig.tsbuildinfo
+frontend/next-env.d.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Yarn Berry
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/versions
+frontend/.pnp.*
+
+# Coverage / testing
+frontend/coverage/
+
+# ============================================================
+# Docker
+# ============================================================
+docker-compose.override.yml
+
+# ============================================================
+# Certificates & secrets
+# ============================================================
+*.pem
+*.key
+*.crt
+*.p12
